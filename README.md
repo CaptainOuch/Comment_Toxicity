@@ -2,9 +2,7 @@
 
 ## Данные
 Данные были взяты с соревнование на kaggle
-<p align="center">
-<img width=500 src= "https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/overview"/>
-</p>
+[kaggle-jigsaw-toxic-comment-classification](https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/overview)
 
 
 ## Обучение модели
@@ -38,3 +36,26 @@ print(f'Precision: {pre.result().numpy()}, Recall:{re.result().numpy()}, Accurac
     Precision: 0.9288560152053833, Recall:0.9220339059829712, Accuracy:0.5115346312522888
     
 
+```python
+input_text = vectorizer('You freaking suck! I am going to hit you.')
+```
+
+
+```python
+res = model.predict(np.expand_dims(input_text, 0))
+```
+
+    1/1 [==============================] - 0s 35ms/step
+    
+
+
+```python
+(res > 0.5).astype(int)
+
+#toxic severe_toxic obscene threat insult identity_hate
+```
+
+
+
+
+    array([[1, 1, 1, 0, 1, 0]])
