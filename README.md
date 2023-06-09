@@ -1,4 +1,4 @@
-# Определение лица и насколько оно секси
+# Определение токсичности комментария
 
 ## Данные
 Данные были взяты с соревнование на [kaggle](https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/overview)
