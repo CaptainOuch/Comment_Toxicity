@@ -61,4 +61,4 @@ res = model.predict(np.expand_dims(input_text, 0))
 
 
     array([[1, 1, 1, 0, 1, 0]])
-#toxic/severe_toxic/obscene/threat/insult/identity_hate
+toxic / severe_toxic / obscene / threat / insult / identity_hate
